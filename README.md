@@ -1,7 +1,7 @@
 # SKSpinner [![CI Status](https://travis-ci.org/TXF/SKSpinner.svg?branch=master)](https://travis-ci.org/TXF/SKSpinner) [![Version](https://img.shields.io/cocoapods/v/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner) [![Platform](https://img.shields.io/cocoapods/p/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner)
 SKSpinner is an iOS control that displays a loader while tasks is being processed.
 
-![SKSpinner](http://s30.postimg.org/n45yfh2lt/SKSpinner.gif)
+![SKSpinner](http://s16.postimg.org/gut0nypad/Spinner2.gif)
 <!---
  [![License](https://img.shields.io/cocoapods/l/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner)
 -->
