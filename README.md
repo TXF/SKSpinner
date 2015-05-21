@@ -48,7 +48,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 });
 ```
 
-If you need to configure the HUD you can do this by using the SKSpinner reference that initWithView: returns. 
+If you need to configure the spinner you can do this by using the SKSpinner reference that initWithView: returns. 
 
 ```objective-c
 SKSpinner *spinner = [[SKSpinner alloc] initWithView:self.view];
@@ -56,7 +56,7 @@ spinner.minShowTime = 5.f;
 spinner.color = [UIColor greenColor];
 [spinner showAnimated:YES];
 [self doSomethingInBackgroundWithProgressCallback:^(float progress) {
-    hud.progress = progress;
+   // Do something...
 } completionCallback:^{
     [spinner hideAnimated:YES];
 }];
