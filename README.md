@@ -1,4 +1,4 @@
-# SKSpinner [![CI Status](https://travis-ci.org/TXF/SKSpinner.svg?branch=master)](https://travis-ci.org/TXF/SKSpinner)[![Version](https://img.shields.io/cocoapods/v/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner) [![Platform](https://img.shields.io/cocoapods/p/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner)
+# SKSpinner [![CI Status](https://travis-ci.org/TXF/SKSpinner.svg?branch=master)](https://travis-ci.org/TXF/SKSpinner) [![Version](https://img.shields.io/cocoapods/v/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner) [![Platform](https://img.shields.io/cocoapods/p/SKSpinner.svg?style=flat)](http://cocoapods.org/pods/SKSpinner)
 SKSpinner is an iOS control that displays a loader while tasks is being processed.
 
 ![SKSpinner](http://s30.postimg.org/n45yfh2lt/SKSpinner.gif)
@@ -20,7 +20,7 @@ SKSpinner works on any iOS version and is compatible with ARC projects. It depen
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add SKSpinner to your project.
 
-1. Add a pod entry for SKSpinner to your Podfile `pod 'SKSpinner', '~> 0.0.1'`
+1. Add a pod entry for SKSpinner to your Podfile `pod 'SKSpinner', '~> 0.1.0'`
 2. Install the pod(s) by running `pod install`.
 3. Include SKSpinner wherever you need it with `#import "SKSpinner.h"`.
 
@@ -41,9 +41,9 @@ The main guideline you need to follow when dealing with SKSpinner while running 
 ```objective-c
 [SKSpinner showTo:self.view animated:YES];
 dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-// Do something...
+    // Do something...
 dispatch_async(dispatch_get_main_queue(), ^{
-[SKSpinner hideAnimated:NO];
+    [SKSpinner hideAnimated:NO];
 });
 });
 ```
@@ -56,9 +56,9 @@ spinner.minShowTime = 5.f;
 spinner.color = [UIColor greenColor];
 [spinner showAnimated:YES];
 [self doSomethingInBackgroundWithProgressCallback:^(float progress) {
-hud.progress = progress;
+    hud.progress = progress;
 } completionCallback:^{
-[spinner hideAnimated:YES];
+    [spinner hideAnimated:YES];
 }];
 ```
 
