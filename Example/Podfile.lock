@@ -1,0 +1,14 @@
+PODS:
+  - SKSpinner (0.0.1)
+
+DEPENDENCIES:
+  - SKSpinner (from `../`)
+
+EXTERNAL SOURCES:
+  SKSpinner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SKSpinner: e6431bb272ddcf1e743852fd0c90c34daaa27879
+
+COCOAPODS: 0.36.1

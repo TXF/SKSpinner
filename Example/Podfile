@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'SKSpinner', :exclusive => true do
+  pod "SKSpinner", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "SKSpinner", :path => "../"
+
+  
+end
