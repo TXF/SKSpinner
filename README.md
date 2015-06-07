@@ -20,7 +20,7 @@ SKSpinner works on any iOS version and is compatible with ARC projects. It depen
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add SKSpinner to your project.
 
-1. Add a pod entry for SKSpinner to your Podfile `pod 'SKSpinner', '~> 0.1.0'`
+1. Add a pod entry for SKSpinner to your Podfile `pod 'SKSpinner', '~> 0.1.1'`
 2. Install the pod(s) by running `pod install`.
 3. Include SKSpinner wherever you need it with `#import "SKSpinner.h"`.
 

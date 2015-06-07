@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SKSpinner"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "An iOS Skype-alike activity indicator view."
   s.description      = <<-DESC
                        SKSpinner is an iOS control that displays a loader while tasks is being processed.

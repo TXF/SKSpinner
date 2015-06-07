@@ -94,15 +94,19 @@ static SKSpinner *_spinner;
                                                              target:self
                                                            selector:@selector(handleMinShowTimer:)
                                                            userInfo:@(animated) repeats:NO];
+        else {
+            _minShowTime = .0;
+            [self hideAnimated:animated];
+        }
     }
     else if (animated) {
         [UIView animateWithDuration:0.30 animations: ^{
             self.alpha = 0.02f;
         }
-         completion:^(BOOL completed)
-         {
-             [self remove];
-         }];
+        completion:^(BOOL completed)
+        {
+            [self remove];
+        }];
     } else {
         self.alpha = 0.0f;
         [self remove];
@@ -118,7 +122,6 @@ static SKSpinner *_spinner;
 
 - (void)handleMinShowTimer:(NSTimer *)theTimer
 {
-    NSLog(@"timer expared");
     _minShowTime = .0;
     _minShowTimer = nil;
     BOOL animated = [theTimer.userInfo boolValue];
